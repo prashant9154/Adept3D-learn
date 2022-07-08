@@ -12,6 +12,9 @@ Fonts: Montserrat Varela Round
 	General
 \*------------------------------------*/
 
+:root {
+    --template-color: rgb(245, 123, 1);
+}
 
 /* -- typography -- */
 
@@ -52,7 +55,7 @@ h5 {
 }
 
 a {
-    color: #6195FF;
+    color: var(--template-color);
     text-decoration: none;
     -webkit-transition: 0.2s opacity;
     transition: 0.2s opacity;
@@ -62,11 +65,11 @@ a:hover, a:focus {
     text-decoration: none;
     outline: none;
     opacity: 0.8;
-    color: #6195FF;
+    color: var(--template-color);
 }
 
 .main-color {
-    color: #6195FF;
+    color: var(--template-color);
 }
 
 .white-text {
@@ -74,12 +77,12 @@ a:hover, a:focus {
 }
 
 ::-moz-selection {
-    background-color: #6195FF;
+    background-color: var(--template-color);
     color: #FFF;
 }
 
 ::selection {
-    background-color: #6195FF;
+    background-color: var(--template-color);
     color: #FFF;
 }
 
@@ -140,7 +143,7 @@ ul, ol {
     right: 0;
     bottom: 0;
     opacity: .8;
-    background: #1C1D21;
+    background: #06060696;
 }
 
 
@@ -160,7 +163,7 @@ ul, ol {
   	display:block;
   	height:4px;
   	width:40px;
-  	background-color: #6195FF;
+  	background-color: var(--template-color);
     margin-top: 20px;
 }
 
@@ -190,7 +193,7 @@ textarea {
 }
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="url"]:focus, input[type="tel"]:focus, textarea:focus {
-    border-color: #6195FF;
+    border-color: var(--template-color);
     opacity: 1;
 }
 
@@ -207,7 +210,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .main-btn {
-    background: #6195FF;
+    background: var(--template-color);
     color: #FFF;
 }
 
@@ -218,8 +221,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 .outline-btn {
     background: transparent;
-    color: #6195FF !important;
-    border-color: #6195FF;
+    color: var(--template-color) !important;
+    border-color: var(--template-color);
 }
 
 .main-btn:hover, .white-btn:hover, .outline-btn:hover {
@@ -316,12 +319,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
     .main-nav>li>a:hover, .main-nav>li>a:focus, .main-nav>li.active>a {
         background: transparent;
-        color: #6195FF;
+        color: var(--template-color);
     }
     .main-nav>li>a:after {
         content: "";
         display: block;
-        background-color: #6195FF;
+        background-color: var(--template-color);
         height: 2px;
         width: 0%;
         -webkit-transition: 0.2s width;
@@ -350,7 +353,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         position: absolute;
         right: -50%;
         top: 0;
-        background-color: #6195FF;
+        background-color: var(--template-color);
         width: 200px;
         -webkit-box-shadow: 0px 5px 5px -5px rgba(53, 64, 82, 0.2);
         box-shadow: 0px 5px 5px -5px rgba(53, 64, 82, 0.2);
@@ -438,10 +441,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         transition: 0.2s all;
     }
     .main-nav>li.active {
-        border-left: 6px solid #6195FF;
+        border-left: 6px solid var(--template-color);
     }
     .main-nav li a:hover, .main-nav li a:focus {
-        background-color: #6195FF;
+        background-color: var(--template-color);
         color: #FFF;
         opacity: 1;
     }
@@ -618,7 +621,7 @@ header {
 
 .about i {
     font-size: 36px;
-    color: #6195FF;
+    color: var(--template-color);
     margin-bottom: 20px;
 }
 
@@ -631,8 +634,8 @@ header {
     bottom: 0;
     width: 0%;
     z-index: -1;
-    -webkit-transition: 0.2s width;
-    transition: 0.2s width;
+    -webkit-transition: 0.5s width;
+    transition: 0.5s width;
 }
 
 .about:hover:after {
@@ -722,7 +725,7 @@ header {
     -ms-transform: translateY(100%);
     transform: translateY(100%);
     opacity: 0;
-    color: #6195FF;
+    color: var(--template-color);
     margin-bottom: 5px;
     -webkit-transition: 0.2s all;
     transition: 0.2s all;
@@ -751,7 +754,7 @@ header {
     display: inline-block;
     width: 50px;
     height: 50px;
-    background-color: #6195FF;
+    background-color: var(--template-color);
     color: #FFF;
     line-height: 50px;
     text-align: center;
@@ -780,7 +783,7 @@ header {
     left: 20px;
     text-align: center;
     font-size: 32px;
-    color: #6195FF;
+    color: var(--template-color);
     border-radius: 50%;
 }
 
@@ -793,8 +796,8 @@ header {
     bottom: 0;
     width: 0%;
     z-index: -1;
-    -webkit-transition: 0.2s width;
-    transition: 0.2s width;
+    -webkit-transition: 0.5s width;
+    transition: 0.5s width;
 }
 
 .service:hover:after {
@@ -821,8 +824,8 @@ header {
     float: left;
     padding: 5px;
     border-radius: 50%;
-    color: #6195FF;
-    border: 1px solid #6195FF;
+    color: var(--template-color);
+    border: 1px solid var(--template-color);
     margin-right: 5px;
 }
 
@@ -836,7 +839,7 @@ header {
 }
 
 .number i {
-    color: #6195FF;
+    color: var(--template-color);
     font-size: 36px;
     margin-bottom: 20px;
 }
@@ -891,7 +894,7 @@ header {
 }
 
 .pricing:hover .price-title {
-    color: #6195FF;
+    color: var(--template-color);
 }
 
 .pricing .price {
@@ -902,7 +905,7 @@ header {
     text-align: center;
     margin: auto;
     border-radius: 50%;
-    border: 2px solid #6195FF;
+    border: 2px solid var(--template-color);
 }
 
 .pricing .price h3 {
@@ -952,7 +955,7 @@ header {
 
 .contact i {
     font-size: 36px;
-    color: #6195FF;
+    color: var(--template-color);
     margin-bottom: 20px;
 }
 
@@ -1009,7 +1012,7 @@ header {
   line-height: 50px;
   text-align: center;
   border-radius: 3px;
-  background-color: #6195FF;
+  background-color: var(--template-color);
   color:#FFF;
 }
 
@@ -1114,7 +1117,7 @@ header {
   	height: 50px;
   	line-height: 50px;
   	text-align: center;
-  	background: #6195FF;
+  	background: var(--template-color);
   	border-radius:3px;
   	color: #FFF;
   	z-index: 9999;
